@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>getElementById example</title>
+  <script>
+  function changeColor(newColor) {
+  var elemt = document.getElementById('demo');
+  elemt.style.color = newColor;
+  elemt.innerHTML = "Changed the color to " + newColor; //newColor在点击按钮时会将颜色的名称加入句子中
+  elemt.setAttribute("class","new-class");//这句代码只是一个声明
+}
+  </script>
+</head>
+<body>
+  <p id="demo">Changed the color to ... </p>
+  <button onclick="changeColor('green');">Change to Green</button>
+  <button onclick="changeColor('orange');">Change to Orange</button>
+</body>
+</html>
