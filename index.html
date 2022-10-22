@@ -1,12 +1,38 @@
 <html>
-	<head>
-	</head>
-	<body>
-		<script language="javascript" type="text/javascript">
-			var x = -1
-			if (x < 0)
-			alert("x is a negative number");
-		</script>
-	</body>
-</html>
+<head>
+    <script>
+	function start() {
+// 1. (getElementsByClassName) Uncomment this part and comment other parts	
+/*       	
+        var testClass = document.getElementsByClassName("test"); 
+		testClass[0].style.color = "blue";
+		testClass[1].style.backgroundColor = "yellow";
+*/	//通过class name检索，第一个ClassName为test的字体颜色变为蓝色，第二个背景颜色变为黄色
 
+// 2. (getElementsByTagName) Uncomment this part and comment other parts	
+       
+		var testTagName = document.getElementsByTagName('p'); 
+		testTagName[0].style.color = "green";
+
+
+// 3. (querySelectorAll) Uncomment this part and comment other parts	
+/*     
+		var testQuerySelector = document.querySelectorAll('p span'); 
+		testQuerySelector[0].style.color = "purple";
+*/
+}
+    </script>
+
+</head>
+<body>
+    <div>
+        <p>Test 1</p>
+        <p class="test">Test 2</p>
+        <p class="test">Test 3</p>
+        <p>Test 4</p>
+    </div>
+	<p><span>Test 5</span></p>
+	<button onclick="start();">Click to start</button>
+
+</body>
+</html>
